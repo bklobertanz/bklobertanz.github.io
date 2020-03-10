@@ -26,6 +26,13 @@ a {
   color: #fff;
   font-weight: bold;
 }
+td{
+  background-color: green;
+  color: white;
+}
+td.ocupado {
+  background-color: red;
+}
 
 nav a:hover {
   color: #1345D8 !important;
@@ -50,7 +57,6 @@ nav a:hover {
 @media (max-width: 768px) {
   
 }
-
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -62,4 +68,11 @@ footer.footer {
 }
 .lista-habilidades li{
   margin-right: 1em;
+}
+.card{
+  width: 10rem;
+}
+.card-img-top{
+
+  width: 12.5rem;
 }

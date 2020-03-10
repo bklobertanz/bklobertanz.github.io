@@ -27,23 +27,19 @@
 <body>
   <!-- Modal confirmación visita -->
   <div id="modalConfirmarVisita" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Su visita ha sido confirmada</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="btnDismiss close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <h6>Resumen</h5>
-          <p>Nombre cuidador realizará un cuidado el día X, empezando a las X horas y terminando a las X horas.</p>
-          <p>Esto sería un total de $X, ya que nuestro cuidador trabajará un total de x horas.</p>
-          <p>El cuidador se presentará en el domicilio que usted especificó.</p>
-          <p>Gracias nombre usuario por confiar en nosotros!</p>
+          <h6>Resumen</h6>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+          <button type="button" class="btnDismiss btn btn-primary" data-dismiss="modal">Entendido</button>
         </div>
       </div>
     </div>
@@ -57,7 +53,7 @@
           <div class="container d-flex justify-content-center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/EIyixC9NsLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="btnDismiss close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -68,7 +64,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vel cumque dolores nobis quia consectetur voluptatibus facere pariatur eum deserunt? Minima obcaecati natus aliquid nisi quaerat commodi quos incidunt. Consequatur!</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Atrás</button>
+          <button type="button" class="btnDismiss btn btn-secondary" data-dismiss="modal">Atrás</button>
           <button type="button" class="btnSolVisita btn btn-primary">Solicitar visita</button>
         </div>
       </div>
@@ -78,11 +74,11 @@
 
    <!-- Modal solicitud visita cuidador -->
    <div id="modalSolVisita" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Solicitar visita con Nombre cuidador</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="btnDismiss close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -239,15 +235,15 @@
                 <hr>
               </div>
             <div class="row">
-              <h5>Horas seleccionadas para cuidado: X</h5>
+              <h5 id="horasSeleccionadas"></h5>
             </div>
             <div class="row">
-              <h5>Total: $X</h5>
+              <h5 id="totalSeleccionado"></h5>
             </div>
             </div>
           </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class=" btnDismiss btn btn-secondary" data-dismiss="modal">Cerrar</button>
           <button type="button" class="btnConfirmarVisita btn btn-primary">Confirmar Visita</button>
         </div>
       </div>
@@ -335,8 +331,7 @@
           </div>
         </div>
       </div>
-</section>
-
+    </section>
   <!-- Footer -->
   <footer class="footer bg-light">
     <div class="container">
