@@ -76,3 +76,9 @@ footer.footer {
 
   width: 12.5rem;
 }
+.nav-item{
+  margin-left: 2rem;
+}
+.nav-link{
+  text-transform: uppercase;
+}

@@ -1,5 +1,4 @@
 'use strict';
-
 $(document).ready(()=>{
      //Compartamiento de los botones de los modals
 
@@ -77,8 +76,8 @@ $(document).ready(()=>{
         });
         lista+='</ul>';
         let p2 =`<p>Esto sería un total de $${precioTotal}, ya que nuestro cuidador trabajará un total de ${horasTotales} hora(s).<p>`;
-        let p3 = '<p>El cuidador se presentará en el domicilio que usted especificó.</p>';
-        let p4 = '<p>Gracias nombre usuario por confiar en nosotros!</p>';
+        let p3 = `<p>El cuidador se presentará en ${localStorage.getItem('direccionFamiliar')} para cuidar a ${localStorage.getItem('nombreFamiliar')}.</p>`;
+        let p4 = `<p>Gracias ${localStorage.getItem('nombre')} por confiar en nosotros!</p>`;
         $('#modalConfirmarVisita .modal-body').append(p1,lista,p2,p3,p4);
     }
     function popByIndex(element,array){

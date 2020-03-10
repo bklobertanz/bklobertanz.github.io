@@ -102,7 +102,9 @@ function css() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
+  gulp.watch("./static/css/*.css", browserSyncReload);
   gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch("./js/*.js", browserSyncReload);
 }
 
 // Define complex tasks
