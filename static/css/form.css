@@ -1,3 +1,9 @@
 body{
     background: #fff;
 }
+@media (min-width: 768px){
+
+    .btn-block{
+        width:auto;
+    }
+}
