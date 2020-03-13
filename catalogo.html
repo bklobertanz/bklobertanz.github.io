@@ -27,7 +27,7 @@
 <body>
   <!-- Modal confirmación visita -->
   <div id="modalConfirmarVisita" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-md" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Su visita ha sido confirmada</h5>
@@ -51,7 +51,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="container d-flex justify-content-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/EIyixC9NsLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="550" height="250" src="https://www.youtube.com/embed/EIyixC9NsLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <button type="button" class="btnDismiss close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -252,15 +252,12 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-light bg-light navbar-expand-lg bg-secondary fixed-top p-0">
+  <nav class="navbar navbar-light bg-light navbar-expand-lg bg-secondary fixed-top pr-2 pr-sm-2 p-md-0">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger m-0" href="#top">
         <img class="m-0" src="static/img/logo.png" width="80" alt="ashu-logo">
       </a>
-      <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse ml-5 text-uppercase" id="navbarResponsive">
+      <div class="ml-5 text-uppercase" id="navbarResponsive">
         <div id="navbar-buttons" class="ml-auto">
           <span class="text-muted">¿Dudas? <strong style="color:black"> Llámanos</strong></span>
           <br>
@@ -270,68 +267,121 @@
     </div>
   </nav>
   <!--Catálogo-->
-  <section id="catalogo" class="mt-5 mb-5">
+  <section id="catalogo" class="mt-5">
     <div class="container">
-        <div class="card-deck">
-          <div class="card">
-            <picture>
-              <img src="static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
-            </picture>
-            <div class="card-body">
-              <h6 class="card-subtitle text-muted mb-2">Estudiante o profesional Carrera</h6>
-              <h5 class="card-title">Nombre Cuidador</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Ashu inicial</li>
-              <li class="list-group-item">
-                <ul class="lista-habilidades">
-                  <li ><span class="badge badge-primary">Habilidad 1</span></li>
-                  <li><span class="badge badge-success">Habilidad 2</span></li>
-                  <li><span class="badge badge-danger">Habilidad 3</span></li>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+              <div class="card">
+                <img src="./static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre cuidador</h4>
+                  <h5 class="card-subtitle text-muted">Carrera</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Experiencia / Estudiante o profesional</li>
+                  <li class="list-group-item">Habilidades</li>
+                  <li class="list-group-item">Precio por hora</li>
                 </ul>
-              </li>
-              <li class="list-group-item">$3.000 por hora</li>
-            </ul>
-            <div class="card-body d-flex justify-content-around">
-              <a class="btnConoceme card-link btn btn-primary">Conóceme</a>
-              <a class="btnSolVisita card-link btn btn-secondary">Solicitar visita</a>
+                <div class="card-body card-button">
+                  <button class="btnConoceme btn btn-block btn-primary">Conóceme</button>
+                  <button class="btnSolVisita btn btn-block btn-success mt-3">Solicitar visita</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col">
+              <div class="card">
+                <img src="./static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre cuidador</h4>
+                  <h5 class="card-subtitle text-muted">Carrera</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Experiencia / Estudiante o profesional</li>
+                  <li class="list-group-item">Habilidades</li>
+                  <li class="list-group-item">Precio por hora</li>
+                </ul>
+                <div class="card-body card-button">
+                  <button class="btnConoceme btn btn-block btn-primary">Conóceme</button>
+                  <button class="btnSolVisita btn btn-block btn-success mt-3">Solicitar visita</button>
+                </div>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            <div class="col">
+              <div class="card">
+                <img src="./static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre cuidador</h4>
+                  <h5 class="card-subtitle text-muted">Carrera</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Experiencia / Estudiante o profesional</li>
+                  <li class="list-group-item">Habilidades</li>
+                  <li class="list-group-item">Precio por hora</li>
+                </ul>
+                <div class="card-body card-button">
+                  <button class="btnConoceme btn btn-block btn-primary">Conóceme</button>
+                  <button class="btnSolVisita btn btn-block btn-success mt-3">Solicitar visita</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col">
+              <div class="card">
+                <img src="./static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre cuidador</h4>
+                  <h5 class="card-subtitle text-muted">Carrera</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Experiencia / Estudiante o profesional</li>
+                  <li class="list-group-item">Habilidades</li>
+                  <li class="list-group-item">Precio por hora</li>
+                </ul>
+                <div class="card-body card-button">
+                  <button class="btnConoceme btn btn-block btn-primary">Conóceme</button>
+                  <button class="btnSolVisita btn btn-block btn-success mt-3">Solicitar visita</button>
+                </div>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            <div class="col">
+              <div class="card">
+                <img src="./static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre cuidador</h4>
+                  <h5 class="card-subtitle text-muted">Carrera</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Experiencia / Estudiante o profesional</li>
+                  <li class="list-group-item">Habilidades</li>
+                  <li class="list-group-item">Precio por hora</li>
+                </ul>
+                <div class="card-body card-button">
+                  <button class="btnConoceme btn btn-block btn-primary">Conóceme</button>
+                  <button class="btnSolVisita btn btn-block btn-success mt-3">Solicitar visita</button>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="col">
+              <div class="card">
+                <img src="./static/img/rodrigo.jpg" class="card-img-top" alt="img-cuidador">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre cuidador</h4>
+                  <h5 class="card-subtitle text-muted">Carrera</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Experiencia / Estudiante o profesional</li>
+                  <li class="list-group-item">Habilidades</li>
+                  <li class="list-group-item">Precio por hora</li>
+                </ul>
+                <div class="card-body card-button">
+                  <button class="btnConoceme btn btn-block btn-primary">Conóceme</button>
+                  <button class="btnSolVisita btn btn-block btn-success mt-3">Solicitar visita</button>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer bg-light">
     <div class="container">

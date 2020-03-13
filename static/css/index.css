@@ -18,6 +18,10 @@ h6 {
 a {
   cursor: pointer;
 }
+.card{
+  width:20rem;
+  margin-bottom: 3rem !important;
+}
 #catalogo img{
   max-height: 100%;
   max-width: 100%;
@@ -47,35 +51,31 @@ nav a:hover {
 #navbar-buttons i {
   margin-left: 2rem;
 }
-
-@media (min-width: 768px) {
-  
-}
-
-
-
-@media (max-width: 768px) {
-  
-}
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 .lista-habilidades{
-  display: flex;
   list-style: none;
-  justify-content: left;
 }
 .lista-habilidades li{
   margin-right: 1em;
 }
-.card{
-  width: 10rem;
-}
-.card-img-top{
-
-  width: 12.5rem;
-}
 .nav-link{
   text-transform: uppercase;
+}
+@media(max-width: 576px){
+  body{
+    padding-top:106px;
+  }
+  #catalogo .col{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(min-width: 576px){
+  #catalogo .col{
+    display: flex;
+    justify-content: center;
+  }
 }
